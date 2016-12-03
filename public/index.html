@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Simple chat</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="pages">
+        <li class="chat page">
+            <div class="chatArea">
+                <ul id="messages"></ul>
+            </div>
+            <form name="chat">
+                <input name="message" class="inputMessage" placeholder="Введите вообщение" autocomplete="off" />
+            </form>
+        </li>
+        <li class="login page">
+            <div class="form">
+                <form name="login">
+                    <h3 class="title">Ваше имя</h3>
+                    <input name="username" type="text" />
+                    <h3 class="title">Комната</h3>
+                    <select name="room">
+                        <option value="1">Комната 1</option>
+                        <option value="2">Комната 2</option>
+                        <option value="3">Комната 3</option>
+                    </select>
+                    <br/>
+                    <button>Начать</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
